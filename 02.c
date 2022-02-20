@@ -4,11 +4,13 @@
 
 int main() 
 {
-  int peixe;
-  float kilo;
 
+    int peixe;
+    float kilo;
     
-    printf("Opcoes de Peixe=> 1- Salmao, 2- Pintado ou 3- Sardinha:\n");
+for (;;)
+    {    
+    printf("Escolha as Opcoes de Peixe=> 1- Salmao, 2- Pintado, 3- Sardinha. 0-Fechar\n");
     scanf("%d", &peixe);
 
         if (peixe == 1)
@@ -17,7 +19,7 @@ int main()
             scanf("%f", &kilo);
                 if (kilo > 3.0)
                 {
-                    printf("So podemos oferecer 3 Kilo.\n");
+                    printf("*So podemos fornecer 3 Kilos.\n");
                 
                 }
         }       
@@ -28,25 +30,24 @@ int main()
             scanf("%f", &kilo);
                 if (kilo > 3.0)
                 {
-                    printf("So podemos oferecer 3 Kilo.\n");
+                    printf("*So podemos fornecer 3 Kilos.\n");
                 }
         }
 
-        if (peixe == 3)
+        if (peixe == 3) 
         {
             printf("Quantos Kilos de Sardinho:\n");
             scanf("%f", &kilo);
                 if (kilo > 3.0)
                 {
-                    printf("So podemos oferecer 3 Kilo.\n");
+                    printf("*So podemos fornecer 3 Kilos.\n");
                 }
         }
-        
-        else
+        if (peixe == 0)
         {
-            printf("Opcao Invalida!\n");
-         
+            printf("*** FIM DO PROGRAMA.***\n");
+            break;
         }
-       
-
+        
+    }
 }
