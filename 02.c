@@ -19,7 +19,11 @@ for (;;)
         {
             printf("Quantos Kilos de Salmao:\n");
             scanf("%f", &kilo);
-                if (kilo > 3)
+                if (kilo <= 3)
+                {
+                    printf("Voltando ao Menu.\n");
+                }
+                else
                 {
                     printf("*So podemos fornecer 3 Kilos.\n");
                 }
@@ -30,7 +34,11 @@ for (;;)
         {
             printf("Quantos Kilos de Pintado:\n");
             scanf("%f", &kilo);
-                if (kilo > 3)
+                if (kilo <= 3)
+                {
+                    printf("Voltando ao Menu.\n");
+                }
+                else
                 {
                     printf("*So podemos fornecer 3 Kilos.\n");
                 }
@@ -40,19 +48,21 @@ for (;;)
         {
             printf("Quantos Kilos de Sardinho:\n");
             scanf("%f", &kilo);
-                if (kilo > 3)
+               if (kilo <= 3)
+                {
+                    printf("Voltando ao Menu.\n");
+                }
+                else
                 {
                     printf("*So podemos fornecer 3 Kilos.\n");
                 }
         }
+
         if (peixe == 0)
-        {
+            {
             printf("*** FIM DO PROGRAMA.***\n");
             break;
-        }
-        else
-        {
-            printf("***Opcao Invalida!!!***\n");
-        }
+            }
+
     }
 }
